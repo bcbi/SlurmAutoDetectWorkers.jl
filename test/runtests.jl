@@ -2,5 +2,5 @@ using SlurmAutoDetectWorkers
 using Test
 
 @testset "SlurmAutoDetectWorkers.jl" begin
-    @test SlurmAutoDetectWorkers._foo(2) == 4
+    @test SlurmAutoDetectWorkers._foo(3) == 6
 end
