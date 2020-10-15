@@ -1,5 +1,5 @@
 module SlurmAutoDetectWorkers
 
-# Write your package code here.
+_foo(x) = x + x
 
 end
