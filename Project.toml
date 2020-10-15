@@ -3,6 +3,9 @@ uuid = "9647cec5-420c-4989-baa7-745a2197a094"
 authors = ["Dilum Aluthge"]
 version = "0.1.0-DEV"
 
+[deps]
+ExistingProcessManagers = "3185f642-0f69-4c32-aed6-948184b6e42b"
+
 [compat]
 julia = "1.5"
 
