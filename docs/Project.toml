@@ -1,0 +1,3 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+SlurmAutoDetectWorkers = "9647cec5-420c-4989-baa7-745a2197a094"

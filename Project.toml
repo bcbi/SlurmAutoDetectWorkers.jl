@@ -1,0 +1,13 @@
+name = "SlurmAutoDetectWorkers"
+uuid = "9647cec5-420c-4989-baa7-745a2197a094"
+authors = ["Dilum Aluthge"]
+version = "0.1.0"
+
+[compat]
+julia = "1.5"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
