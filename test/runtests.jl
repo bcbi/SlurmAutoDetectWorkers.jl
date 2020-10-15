@@ -2,5 +2,5 @@ using SlurmAutoDetectWorkers
 using Test
 
 @testset "SlurmAutoDetectWorkers.jl" begin
-    # Write your tests here.
+    @test SlurmAutoDetectWorkers._foo(1) == 2
 end
