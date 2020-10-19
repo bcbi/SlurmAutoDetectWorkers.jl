@@ -40,8 +40,6 @@ jobs:
             ${{ runner.os }}-test-${{ env.cache-name }}-
             ${{ runner.os }}-test-
             ${{ runner.os }}-
-      # TODO: delete the following line
-      - run: julia --project -e 'using Pkg; Pkg.develop(Pkg.PackageSpec(url = "https://github.com/bcbi/ExistingProcessManagers.jl.git"))'
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
       - uses: julia-actions/julia-processcoverage@v1
@@ -56,14 +54,11 @@ jobs:
       - uses: julia-actions/setup-julia@v1
         with:
           version: '1'
-      # TODO: delete the following line
-      - run: julia --project=docs -e 'using Pkg; pkgs = [Pkg.PackageSpec(url = "https://github.com/bcbi/ExistingProcessManagers.jl.git"), Pkg.PackageSpec(path=pwd())]; Pkg.develop(pkgs)'
-      # TODO: uncomment the following lines
-#       - run: |
-#           julia --project=docs -e '
-#             using Pkg
-#             Pkg.develop(PackageSpec(path=pwd()))
-#             Pkg.instantiate()'
+      - run: |
+          julia --project=docs -e '
+            using Pkg
+            Pkg.develop(PackageSpec(path=pwd()))
+            Pkg.instantiate()'
       - run: |
           julia --project=docs -e '
             using Documenter: doctest
